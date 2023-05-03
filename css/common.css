@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #222328;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 a{
+    display: block;
+    text-indent: -9999px;
+    width: 200px;
+    height: 40px;    
+    background: url('../images/logo.png') no-repeat center;
+}
+
+.gnb {
+    display: flex;
+    font-size: 16px;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+/* 바로 아래 태그만 한정하기 위해 >(꺽쇠)사용 */
+.gnb > li > a {
+    display: block;
+    height: 100px;   
+    /* inline은 높이 안 먹히므로 display: block; 해줘야함*/
+    line-height: 100px;
+    padding: 0 40px;
+}
+
+.gnb > li > a:hover {
+    color: tomato;
+}
+
+.gnb ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 5px 0;
+}
+
+.gnb ul li:hover a {
+    background-color: coral;
+    color: #fff;
+}
+
