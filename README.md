@@ -77,3 +77,25 @@
     color: tomato;
 }
 ```
+
+## slide 구현하기
+### overflow 사용 (영역 밖의 것은 표시 안함)
+### top 값을 조정해서 이미지 교체(JS로)
+```
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide .item img {
+    display: block;
+
+}
+```

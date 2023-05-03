@@ -85,3 +85,166 @@ body {
     color: #fff;
 }
 
+
+/* slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide .item img {
+    display: block;
+}
+
+
+
+/* contents  */
+.contents {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    height: 200px;
+}
+
+.tab {
+    flex: 1;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.tab_tit {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.tab_tit::after {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: coral;
+}
+
+.tab_tit h2 {
+    flex: 1;
+}
+
+.tab_tit h2 a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+.tab_tit h2 a.on {
+    background-color: coral;
+    color: #fff;
+}
+
+.tab_cont {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+}
+
+.tab_cont .notice {
+    /* display: none; */
+}
+
+.tab_cont .notice li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    padding: 4px 6px;
+}
+
+.tab_cont .gallery {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.tab_cont .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.banner {
+    flex: 1;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link {
+    flex: 1;
+}
+
+.link .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.link .items a{
+    line-height: 85px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 85px;
+}
+
+.blind {
+    display: none;
+}
+
+
+/* footer */
+.footer {
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer h1 a {
+    display: block;
+    text-indent: -9999px;
+    width: 200px;
+    height: 40px;
+    background: url('../images/logo-footer.png') no-repeat center;
+}
+
+.sns a {
+    padding: 10px;
+    color: #333;
+}
